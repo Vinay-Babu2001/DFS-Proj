@@ -1,3 +1,4 @@
+import os
 from socket import *
 
 server_addr = "localhost"
