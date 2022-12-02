@@ -3,6 +3,15 @@ import client_lib
 from datetime import datetime
 from time import gmtime, strftime
 
+#Done by 
+#-----Vinay babu Minnakanti
+#----- Gopi Krishna jarugula
+#----- mariah Roberts
+#----- Sushma reddy Gade
+
+
+#---- Instructor **Dr. Chen pan**
+
 def main():
 
     print ("\n")
@@ -15,11 +24,11 @@ def main():
         client_input = sys.stdin.readline()
             
         if "<write>" in client_input:
-            while not client_lib.check_valid_input(client_input):       # error check the input
+            while not client_lib.check_valid_input(client_input):       
                  client_input = sys.stdin.readline()
             
-            filename = client_input.split()[1]      # get the filename from the input
-            response = client_lib.handle_write(filename, client_id, file_version_map)    # handle the write request
+            filename = client_input.split()[1]      
+            response = client_lib.handle_write(filename, client_id, file_version_map)    
             if response == False:
                 print("File unlock polling timeout...")
                 print("Try again later...")
@@ -27,11 +36,11 @@ def main():
             
 
         if "<read>" in client_input:
-            while not client_lib.check_valid_input(client_input):    # error check the input
+            while not client_lib.check_valid_input(client_input):    
                  client_input = sys.stdin.readline()
 
-            filename = client_input.split()[1]   # get file name from the input
-            client_lib.handle_read(filename, file_version_map, client_id)        # handle the read request 
+            filename = client_input.split()[1]   
+            client_lib.handle_read(filename, file_version_map, client_id)        
             print("Exiting <read> mode...\n")
         
         if "<list>" in client_input:
@@ -39,11 +48,7 @@ def main():
             client_lib.send_directory_service(client_socket, "", True)
             client_socket.close()
 
-        #if "<create>" in client_input:
-        #    while not client_lib.check_valid_input(client_input):       # error check the input
-        #         client_input = sys.stdin.readline()
-        #    filename = client_input.split()[1]
-        #    client_lib.create_file(filename)
+        
 
         if "<instructions>" in client_input:
             client_lib.instructions()

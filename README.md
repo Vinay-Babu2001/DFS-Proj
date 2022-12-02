@@ -17,7 +17,7 @@ On the client server we have to run these following commands:
 <read> filename
 <quit>
 
-* Done by 
+Done by 
 -----Vinay babu Minnakanti
 ----- Gopi Krishna jarugula
 ----- mariah Roberts
