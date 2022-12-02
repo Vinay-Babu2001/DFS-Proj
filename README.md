@@ -16,3 +16,12 @@ On the client server we have to run these following commands:
 
 <read> filename
 <quit>
+
+* Done by 
+-----Vinay babu Minnakanti
+----- Gopi Krishna jarugula
+----- mariah Roberts
+----- Sushma reddy Gade
+
+
+---- Instructor **Dr. Chen pan**
